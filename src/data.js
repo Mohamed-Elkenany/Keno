@@ -1,79 +1,68 @@
-import React from "react";
-
-export const sliderItems = [
+export const items = [
     {
-        id: 1,
-        img: "https://image.shutterstock.com/image-photo/portrait-young-smiling-woman-looking-260nw-1865153395.jpg",
-        title: "SUMMER SALE",
-        desc: "DON'T COMMPROMIES ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
+        id: Math.random(),
+        title:"وجبة فطار",
+        description: "  مافن ساخنة وبيض مخفوق طري وصوصج حلال ساخنة شهيّة، وكمّلها مع هاش براونز ذهبية مقرمشة.",
+        price: "60 جنية",
+        category:"فطار",
+        imgUrl: "https://s7d1.scene7.com/is/image/mcdonalds/mcd-Big-Breakfast-uae:1-4-product-tile-desktop",
     },
     {
-        id: 2,
-        img: "https://cdn.stocksnap.io/img-thumbs/280h/woman-bathtub_OVT7H2HWGY.jpg",
-        title: "SUMMER SALE",
-        desc: "DON'T COMMPROMIES ON STYLE! GET FLAT 35% OFF FOR NEW ARRIVALS",
+        id: Math.random(),
+        title:"وجبة فطار",
+        description: "مصدر رائع وشهي للبروتين الذي تحتاجه ليوم يملؤه النشاط. تأتي وجبة فطورنا الخاصة من بيضة عالية الجودة Grade A على مافن إنكليزي طازج مع زبدة وشريحة دجاج وجبنة أميركية ذائبة. يتكون كل ذلك من 290 سعرة حرارية.",
+        price: "70 جنية",
+        category:"فطار",
+        imgUrl: "https://s7d1.scene7.com/is/image/mcdonalds/mcd-Egg-mcmuffin-uae:product-header-desktop?wid=829&hei=455&dpr=off",
     },
     {
-        id: 3,
-        img: "https://cdn.stocksnap.io/img-thumbs/280h/woman-model_RG9FRO0CLN.jpg",
-        title: "SUMMER SALE",
-        desc: "DON'T COMMPROMIES ON STYLE! GET FLAT 50% OFF FOR NEW ARRIVALS",
+        id: Math.random(),
+        title:"وجبة فطار ممتازة",
+        description: "بيض شهيّ مع هاش براونز المقرمش مغمورة بجبنة الشيدر الذائبة مع الدجاج وملفوفة بخبز التورتيلا.",
+        price: "90 جنية",
+        category:"فطار",
+        imgUrl: "https://s7d1.scene7.com/is/image/mcdonalds/mcd-Egg-n-Hashbrown-wrap-uae:1-4-product-tile-desktop",
     },
     {
-        id: 4,
-        img: "https://cdn.stocksnap.io/img-thumbs/280h/beautiful-woman_ZCO0M9U2HR.jpg",
-        title: "SUMMER SALE",
-        desc: "DON'T COMMPROMIES ON STYLE! GET FLAT 40% OFF FOR NEW ARRIVALS",
-    }
-];
-export const categories = [
-    {
-        id: 1,
-        title: "SHIRT STYLE!",
-        img: "https://img.freepik.com/premium-photo/girl-woman-wearing-white-blank-t-shirt-with-space-your-logo-mock-up-design-casual-urban-style_174699-1339.jpg",
+        id: Math.random(),
+        title:"وجبة غداء",
+        description: "قطعة دجاج حلال مقرمش مع المايونيز والخس المقطّع داخل الخبز المحمّص. وتُقدّم مع البطاطس الشهيرة عالمياً®، ومشروب بالحجم المتوسط من اختيارك.",
+        price: "80 جنية",
+        category:"غداء",
+        imgUrl: "https://s7d1.scene7.com/is/image/mcdonalds/mcd-McChicken-new-uae:1-4-product-tile-desktop",
     },
     {
-        id: 2,
-        title: "LOUNGEWEAR LOVE",
-        img: "https://cdn.shopify.com/s/files/1/0280/4305/1105/products/in-love-with-loungewear-set-in-brown-dollhouse-collection-925586_1024x1024@2x.jpg?v=1637702565",
+        id: Math.random(),
+        title:"وجبة غداء درجة اولي",
+        description: "أعِد شحن طاقتك مع كوارتر باوندر بالجبنة! تتكوّن من قطعة لحم البقر الحلال** يتم إعدادها فقط عند طلب وجبتك. وتُقدّم وجبة كوارتر باوندر بالجبنة مع البطاطس الشهيرة عالمياً®، ومشروب بالحجم المتوسط من اختيارك.",
+        price: "90 جنية",
+        category:"غداء",
+        imgUrl: "https://s7d1.scene7.com/is/image/mcdonalds/mcd-QPC-meal-uae:1-4-product-tile-desktop",
     },
     {
-        id: 3,
-        title: "LIGHT JACKETS",
-        img: "https://fusalp.com/no/318469-new_thickbox/banff-ii-jacket.jpg",
-    }
-];
-export const popularProduct = [
-    {
-        id: 1,
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFaIoM8kE-h_aCbACy6IW5AenTTr5iC_85k9tiwiEftGBh5JXRTD44mpveFe3rwAbB2QE&usqp=CAU"
+        id: Math.random(),
+        title:"وجبة غداء ممتازة",
+        description: "بيج ماك® الفريدة والمكوّنة من قطعتي خبز برجر مع السمسم، وصلصة بيج ماك، والجبنة الأميركية، والمخلّل المقطّع. وتُقدّم وجبة بيج ماك® مع البطاطس الشهيرة عالمياً®، ومشروبك المفضّل من الكوكاكولا.",
+        price: "50 جنية",
+        category:"غداء",
+        imgUrl: "https://s7d1.scene7.com/is/image/mcdonalds/mcd-Big-Mac-new-uae:1-4-product-tile-desktop",
     },
     {
-        id: 2,
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqk0DgW2Yb3XIpGfSmfB2gB4P8TGAn245GaabfyZKRXYg8h8sAHlHK2grJdofgcT-f3ow&usqp=CAU"
+        id: Math.random(),
+        title:"وجبة عشاء",
+        description: "طعم لا يُصدّق وسندويتش تأسر القلوب، قطعتين من الدجاج الحلال المغطّى بطبقة من البقسماط وجبنة وخس ومايونيز وقطعة خبز شهيّة في الوسط! هل جربتها بعد؟",
+        price: "50 جنية",
+        category:"عشاء",
+        imgUrl: "https://s7d1.scene7.com/is/image/mcdonalds/mcd-Chicken-Mac-uae:product-header-desktop?wid=829&hei=455&dpr=off",
     },
     {
-        id: 3,
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYbtRKno3cWnGppICw4H2v8SaERt4nZX2R1dePkMrEs8Mwi0siSoVhQS0PteZI4H2sCAI&usqp=CAU"
+        id: Math.random(),
+        title:"وجبة عشاء درجة اولي",
+        description: "3 قطع اتشكن حار باعتدال",
+        price: "50 جنية",
+        category:"عشاء",
+        imgUrl: "https://s7d1.scene7.com/is/image/mcdonalds/mcd-McWings-uae:1-4-product-tile-desktop",
     },
-    {
-        id: 4,
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCEBhxsv6ZsUhqN9nXVXlmy_7IrywIHJWaQxNjchMgt9N6BGfP6a3kHNd7K8ibGE8hpfw&usqp=CAU"
-    },
-    {
-        id: 5,
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzgbV6LMjw1gW4keVBgvEGHjyibxGkaKKX42XHj6kb9dbA9VGEh8TLQxiuoDmum_5FO1I&usqp=CAU"
-    },
-    {
-        id: 6,
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAQNaw4t2RRDtBpAezADQ1UlGkUnZ2R3euxBWHL0whMb99HKrskJAkOHQXAWlN9jLM0fM&usqp=CAU"
-    },
-    {
-        id: 7,
-        img:"https://ae01.alicdn.com/kf/S7698f7a35cd443dda28d115b3e2bc899o.jpg"
-    },
-    {
-        id: 8,
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz6EVQKYiihcjaUos3BEz_8hwwc9s-OB_GKUjK32K6MH93lRI_w0-8ktTNTGcmanJW9gA&usqp=CAU"
-    },
-];
+    
+    
+]

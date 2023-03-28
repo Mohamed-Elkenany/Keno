@@ -1,33 +1,44 @@
-import React from 'react';
-import { GoSearch } from 'react-icons/go'
-import {GrCart } from 'react-icons/gr'
-import Badge from '@mui/material/Badge';
-const Navbar = () => {
-  return (
-      <div className='nav-container'>
-          <div className="wrapper">  
-        <div className="left">
-          <div className="language">EN</div> 
-          <div className="Search-container">
-            <input type='text' placeholder='Search...'></input>
-            <GoSearch style={{color:"gray",fontSize:"16px"}}/>
-          </div> 
-        </div>
-        <div className="center">
-          <div className="logo">
-            <h1>KENO</h1>
-          </div>
-        </div>
-        <div className="right">
-          <div className="register">register</div>
-          <div className="signin">signin</div>
-          <Badge badgeContent={6} color="secondary" style={{marginLeft:"25px"}}>
-            <GrCart/>
-          </Badge>
-        </div>
-          </div>
-    </div>
+import React,{useState} from "react"
+import { Row } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+function NavBar({filterSea}) {
+  const [search, setSearch] = useState("");
+  const filterSearch = () => {
+    filterSea(search)
+    setSearch("");
+  }
+    return (
+      <Row>
+    <Navbar bg="dark" expand="lg" variant="dark">
+      <Container>
+        <Navbar.Brand href="#">مطعم عربي</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+          </Nav>
+          <Form className="d-flex">
+            <Form.Control
+              type="text"
+              placeholder="ابحث..."
+              className="me-2"
+                  onChange={(e) => setSearch(e.target.value)}
+                  value={search}
+            />
+                <Button onClick={()=>filterSearch(search)} className="me-2 bg-white text-black" >بحث</Button>
+          </Form>
+        </Navbar.Collapse>
+      </Container>
+      </Navbar>
+      </Row>
   );
 }
 
-export default Navbar;
+export default NavBar;
